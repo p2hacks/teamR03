@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">soba</string>
+    <string name="seek_present">プレゼントを探す</string>
+    <string name="hide_present">プレゼントを隠す</string>
+    <string name="back1">←</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
