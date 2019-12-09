@@ -3,4 +3,4 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hide_seek.hide_seek_hide_present"/>
+    tools:context=".hide_seek.hide_seek_make_question"/>

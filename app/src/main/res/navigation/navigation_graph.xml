@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/hide_seek_hide_present">
+
+    <fragment
+        android:id="@+id/hide_seek_hide_present"
+        android:name="com.example.soba.hide_seek.hide_seek_hide_present."
+        android:label="fragment_hide_seek_hide_present"
+        tools:layout="@layout/fragment_hide_seek_hide_present" >
+        <action
+            android:id="@+id/action_present_to_make"
+            app:destination="@id/hide_seek_make_question" />
+    </fragment>
+
+
+</navigation>
