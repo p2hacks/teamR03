@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 
 import com.example.soba.R
+import kotlinx.android.synthetic.main.fragment_hide_seek_hide_present.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -37,7 +39,13 @@ class hide_seek_hide_present : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hide_seek_hide_present, container, false)
+        // ボタンクリックによる遷移処理
+        val view = inflater.inflate(R.layout.fragment_hide_seek_hide_present, container, false)
+
+        view.make_question_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_present_to_make_question)
+        }
+        return view
     }
 
 

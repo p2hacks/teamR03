@@ -6,44 +6,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".hide_seek.hide_seek">
+    //navigationファイルを紐づけ
 
-    <Button
-        android:id="@+id/seek_present"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="316dp"
-        android:layout_marginBottom="145dp"
-        android:text="@string/seek_present"
-        app:layout_constraintBottom_toTopOf="@+id/hide_present"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/hide_present"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="145dp"
-        android:layout_marginBottom="174dp"
-        android:text="@string/hide_present"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seek_present" />
-
-    <Button
-        android:id="@+id/back1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="330dp"
-        android:layout_marginBottom="683dp"
-        android:text="@string/back1"
-        android:textSize="36sp"
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/navigation_graph" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
