@@ -21,11 +21,15 @@ class hide_seek_title : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        // ボタンクリックによる遷移処理
         val view = inflater.inflate(R.layout.fragment_hide_seek_title, container, false)
-
+        // プレゼントを隠すボタンをクリックしたときの遷移処理
         view.hide_present_button.setOnClickListener {
             findNavController().navigate(R.id.action_title_to_hide_present)
+
+        }
+        // プレゼントを隠すボタンをクリックしたときの遷移処理
+        view.seek_present_button.setOnClickListener {
+            findNavController().navigate(R.id.action_title_to_seek_present)
         }
         return view
     }

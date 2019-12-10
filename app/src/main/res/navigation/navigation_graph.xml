@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
     app:startDestination="@id/hide_seek_title">
-
+<!--タイトル→プレゼントを隠すの遷移-->
     <fragment
         android:id="@+id/hide_seek_title"
         android:name="com.example.soba.hide_seek.hide_seek_title"
@@ -14,7 +14,7 @@
             android:id="@+id/action_title_to_hide_present"
             app:destination="@id/hide_seek_hide_present" />
     </fragment>
-
+<!--プレゼントを隠す→問題を作るの遷移-->
     <fragment
         android:id="@+id/hide_seek_hide_present"
         android:name="com.example.soba.hide_seek.hide_seek_hide_present"
@@ -24,7 +24,7 @@
             android:id="@+id/action_hide_present_to_make_question"
             app:destination="@id/hide_seek_make_question" />
     </fragment>
-
+<!--問題を作る→プレゼントを隠すの遷移-->
     <fragment
         android:id="@+id/hide_seek_make_question"
         android:name="com.example.soba.hide_seek.hide_seek_make_question"
@@ -34,6 +34,25 @@
             android:id="@+id/action_make_question_to_hide_present"
             app:destination="@id/hide_seek_hide_present" />
     </fragment>
-
+<!--タイトル→プレゼントを探す-->
+    <fragment
+        android:id="@id/hide_seek_title"
+        android:name="com.example.soba.hide_seek.hide_seek_title"
+        android:label="fragment_hide_seek_title"
+        tools:layout="@layout/fragment_hide_seek_title" >
+        <action
+            android:id="@+id/action_title_to_seek_present"
+            app:destination="@id/hide_seek_seek_present" />
+    </fragment>
+<!--プレゼントを探す→タイトルの遷移-->
+    <fragment
+        android:id="@+id/hide_seek_seek_present"
+        android:name="com.example.soba.hide_seek.hide_seek_seek_present"
+        android:label="fragment_hide_seek_seek_present"
+        tools:layout="@layout/fragment_hide_seek_seek_present" >
+        <action
+            android:id="@+id/action_seek_present_to_title"
+            app:destination="@id/hide_seek_title" />
+    </fragment>
 
 </navigation>
