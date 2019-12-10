@@ -39,11 +39,14 @@ class hide_seek_hide_present : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        // ボタンクリックによる遷移処理
         val view = inflater.inflate(R.layout.fragment_hide_seek_hide_present, container, false)
-
+        // 問題を作るボタンを押したときの遷移処理
         view.make_question_button.setOnClickListener {
             findNavController().navigate(R.id.action_hide_present_to_make_question)
+        }
+        // 戻るボタンを押したときの遷移処理
+        view.back_hide_present_to_title_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_present_to_title)
         }
         return view
     }

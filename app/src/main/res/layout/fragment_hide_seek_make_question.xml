@@ -6,7 +6,7 @@
     tools:context=".hide_seek.hide_seek_make_question">
 
     <Button
-        android:id="@+id/back_make_to_hide_button"
+        android:id="@+id/back_make_to_hide_present_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/back1"

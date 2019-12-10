@@ -8,7 +8,7 @@
     tools:context=".hide_seek.hide_seek_seek_present" >
 
     <Button
-        android:id="@+id/back_seek_to_title_button"
+        android:id="@+id/back_seek_present_to_title_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

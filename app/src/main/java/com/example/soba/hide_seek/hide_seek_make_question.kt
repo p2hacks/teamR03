@@ -42,7 +42,7 @@ class hide_seek_make_question : Fragment() {
         // ボタンクリックによる遷移処理
         val view = inflater.inflate(R.layout.fragment_hide_seek_make_question, container, false)
 
-        view.back_make_to_hide_button.setOnClickListener {
+        view.back_make_to_hide_present_button.setOnClickListener {
             findNavController().navigate(R.id.action_make_question_to_hide_present)
         }
         return view
