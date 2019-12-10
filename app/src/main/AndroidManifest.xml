@@ -11,7 +11,7 @@
             android:theme="@style/AppTheme">
         <activity android:name=".exchange.exchange">
         </activity>
-        <activity android:name=".MainActivity"> //hide_seekと逆にした
+        <activity android:name=".MainActivity"> <!--hide_seekと逆にした-->
         </activity>
         <activity android:name=".hide_seek.hide_seek">
             <intent-filter>
