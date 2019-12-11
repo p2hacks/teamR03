@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation_graph"
+    android:id="@+id/navigation_hide_seek"
     app:startDestination="@id/hide_seek_title">
 <!--タイトルからの遷移-->
     <fragment
@@ -76,6 +76,7 @@
         <action
             android:id="@+id/action_hide_seek_question_view_to_hide_seek_make_question"
             app:destination="@id/hide_seek_make_question" />
+    </fragment>
 
 <!--隠し場所を入力からの遷移-->
     <fragment

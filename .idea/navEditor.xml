@@ -102,6 +102,11 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="action_hide_seek_question_view_to_hide_seek_make_question">
+                    <value>
+                      <LayoutPositions />
+                    </value>
+                  </entry>
                   <entry key="hide_seek_hide_place">
                     <value>
                       <LayoutPositions>
@@ -165,12 +170,29 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_hide_seek_make_question_to_hide_seek_question_view">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_make_question_to_hide_present">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
                           </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="hide_seek_question_view">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>
