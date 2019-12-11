@@ -48,6 +48,10 @@ class hide_seek_hide_present : Fragment() {
         view.back_hide_present_to_title_button.setOnClickListener {
             findNavController().navigate(R.id.action_hide_present_to_title)
         }
+        // 隠し場所を入力ボタンを押したときの遷移処理
+        view.hide_place_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_seek_hide_present_to_hide_seek_hide_place)
+        }
         return view
     }
 
