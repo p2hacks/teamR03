@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_exchange"
-            app:startDestination="@id/exchange_explanation">
+            app:startDestination="@id/exchange_input_total">
 
     <fragment android:id="@+id/exchange_explanation" android:name="com.example.soba.exchange.exchange_explanation"
               android:label="fragment_exchange_explanation" tools:layout="@layout/fragment_exchange_explanation">
