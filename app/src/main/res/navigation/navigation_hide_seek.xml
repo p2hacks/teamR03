@@ -48,6 +48,10 @@
         <action
             android:id="@+id/action_make_question_to_hide_present"
             app:destination="@id/hide_seek_hide_present" />
+        <!--問題をつくる→問題一覧-->
+        <action
+            android:id="@+id/action_hide_seek_make_question_to_hide_seek_question_view"
+            app:destination="@id/hide_seek_question_view" />
     </fragment>
 
 <!--プレゼントを探すからの遷移-->
@@ -61,6 +65,18 @@
             android:id="@+id/action_seek_present_to_title"
             app:destination="@id/hide_seek_title" />
     </fragment>
+
+<!--問題一覧からの遷移-->
+    <fragment
+        android:id="@+id/hide_seek_question_view"
+        android:name="com.example.soba.hide_seek.hide_seek_question_view"
+        android:label="fragment_hide_seek_question_view"
+        tools:layout="@layout/fragment_hide_seek_question_view" >
+        <!--問題一覧→問題を作る-->
+        <action
+            android:id="@+id/action_hide_seek_question_view_to_hide_seek_make_question"
+            app:destination="@id/hide_seek_make_question" />
+
 <!--隠し場所を入力からの遷移-->
     <fragment
         android:id="@+id/hide_seek_hide_place"
