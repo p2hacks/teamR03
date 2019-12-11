@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/navigation_exchange">
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_exchange"
+            app:startDestination="@id/exchange_explanation">
 
+    <fragment android:id="@+id/exchange_explanation" android:name="com.example.soba.exchange.exchange_explanation"
+              android:label="fragment_exchange_explanation" tools:layout="@layout/fragment_exchange_explanation">
+        <action android:id="@+id/action_exchange_explanation_to_exchange_play" app:destination="@id/exchange_play"/>
+        <action android:id="@+id/action_exchange_explanation_to_exchange_input_name"
+                app:destination="@id/exchange_input_name"/>
+    </fragment>
+    <fragment android:id="@+id/exchange_input_total" android:name="com.example.soba.exchange.exchange_input_total"
+              android:label="fragment_exchange_input_total" tools:layout="@layout/fragment_exchange_input_total">
+        <action android:id="@+id/action_exchange_input_total_to_exchange_input_name"
+                app:destination="@id/exchange_input_name"/>
+    </fragment>
+    <fragment android:id="@+id/exchange_input_name" android:name="com.example.soba.exchange.exchange_input_name"
+              android:label="fragment_exchange_input_name" tools:layout="@layout/fragment_exchange_input_name">
+        <action android:id="@+id/action_exchange_input_name_to_exchange_explanation"
+                app:destination="@id/exchange_explanation"/>
+        <action android:id="@+id/action_exchange_input_name_to_exchange_input_total"
+                app:destination="@id/exchange_input_total"/>
+    </fragment>
+    <fragment android:id="@+id/exchange_play" android:name="com.example.soba.exchange.exchange_play"
+              android:label="fragment_exchange_play" tools:layout="@layout/fragment_exchange_play">
+        <action android:id="@+id/action_exchange_play_to_exchange_explanation"
+                app:destination="@id/exchange_explanation"/>
+    </fragment>
 </navigation>
