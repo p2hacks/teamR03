@@ -102,6 +102,27 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="hide_seek_hide_place">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="316" />
+                            <option name="y" value="-432" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_hide_seek_hide_place_to_hide_seek_hide_present">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="hide_seek_hide_present">
                     <value>
                       <LayoutPositions>
@@ -119,6 +140,11 @@
                               </value>
                             </entry>
                             <entry key="action_hide_present_to_title">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_hide_seek_hide_present_to_hide_seek_hide_place">
                               <value>
                                 <LayoutPositions />
                               </value>
