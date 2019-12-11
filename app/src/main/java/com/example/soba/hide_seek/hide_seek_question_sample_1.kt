@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 
 import com.example.soba.R
-import kotlinx.android.synthetic.main.fragment_hide_seek_question_view.view.*
+import kotlinx.android.synthetic.main.fragment_hide_seek_question_sample_1.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,10 +18,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [hide_seek_question_view.newInstance] factory method to
+ * Use the [hide_seek_question_sample_1.newInstance] factory method to
  * create an instance of this fragment.
  */
-class hide_seek_question_view : Fragment() {
+class hide_seek_question_sample_1 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -39,22 +39,22 @@ class hide_seek_question_view : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_hide_seek_question_view, container, false)
+        val view = inflater.inflate(R.layout.fragment_hide_seek_question_sample_1, container, false)
         // 問1ボタンを押したときの遷移処理
-        view.input_question_1_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_question_view_to_hide_seek_question_input_1)
+        view.input_sample_1_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_seek_question_sample_1_to_hide_seek_question_sample_1_input_1)
         }
         // 問2ボタンを押したときの遷移処理
-        view.input_question_2_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_question_view_to_hide_seek_question_input_2)
+        view.input_sample_2_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_seek_question_sample_1_to_hide_seek_question_sample_1_input_2)
         }
         // 問3ボタンを押したときの遷移処理
-        view.input_question_3_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_question_view_to_hide_seek_question_input_3)
+        view.input_sample_3_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_seek_question_sample_1_to_hide_seek_question_sample_1_input_3)
         }
         // 戻るボタンを押したときの遷移処理
-        view.back_questions_to_make_question_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_question_view_to_hide_seek_make_question)
+        view.back_sample_1_to_make_question_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_seek_question_sample_1_to_hide_seek_make_question)
         }
         return view
     }
@@ -67,12 +67,12 @@ class hide_seek_question_view : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment hide_seek_question_view.
+         * @return A new instance of fragment hide_seek_question_sample_1.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            hide_seek_question_view().apply {
+            hide_seek_question_sample_1().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
