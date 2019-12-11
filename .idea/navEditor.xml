@@ -13,18 +13,9 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="368" />
+                            <option name="x" value="-58" />
+                            <option name="y" value="923" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_hide_seek_hide_place_to_hide_seek_hide_present">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -34,18 +25,13 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="256" />
-                            <option name="y" value="368" />
+                            <option name="x" value="475" />
+                            <option name="y" value="686" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
                             <entry key="action_hide_present_to_make_question">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_hide_present_to_title">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -65,8 +51,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="500" />
-                            <option name="y" value="46" />
+                            <option name="x" value="936" />
+                            <option name="y" value="515" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -81,11 +67,6 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_make_question_to_hide_present">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                           </map>
                         </option>
                       </LayoutPositions>
@@ -96,18 +77,9 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-216" />
-                            <option name="y" value="-384" />
+                            <option name="x" value="-273" />
+                            <option name="y" value="-848" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_hide_seek_question_input_1_to_hide_seek_question_view">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -117,18 +89,9 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-208" />
-                            <option name="y" value="-52" />
+                            <option name="x" value="-360" />
+                            <option name="y" value="578" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_hide_seek_question_input_2_to_hide_seek_question_view">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -138,18 +101,9 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-232" />
-                            <option name="y" value="319" />
+                            <option name="x" value="-423" />
+                            <option name="y" value="61" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_hide_seek_question_input_3_to_hide_seek_question_view">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -159,17 +113,12 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="774" />
-                            <option name="y" value="32" />
+                            <option name="x" value="1368" />
+                            <option name="y" value="235" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_hide_seek_question_sample_1_to_hide_seek_make_question">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                             <entry key="action_hide_seek_question_sample_1_to_hide_seek_question_sample_1_input_1">
                               <value>
                                 <LayoutPositions />
@@ -195,18 +144,9 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="676" />
-                            <option name="y" value="-360" />
+                            <option name="x" value="1055" />
+                            <option name="y" value="-339" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_hide_seek_question_sample_1_input_1_to_hide_seek_question_sample_1">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -216,18 +156,9 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="970" />
-                            <option name="y" value="-359" />
+                            <option name="x" value="1396" />
+                            <option name="y" value="-186" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_hide_seek_question_sample_1_input_2_to_hide_seek_question_sample_1">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -237,18 +168,9 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1230" />
-                            <option name="y" value="-366" />
+                            <option name="x" value="1666" />
+                            <option name="y" value="-360" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_hide_seek_question_sample_1_input_3_to_hide_seek_question_sample_1">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -258,17 +180,12 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="65" />
-                            <option name="y" value="-16" />
+                            <option name="x" value="753" />
+                            <option name="y" value="23" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_hide_seek_question_view_to_hide_seek_make_question">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                             <entry key="action_hide_seek_question_view_to_hide_seek_question_input_1">
                               <value>
                                 <LayoutPositions />
@@ -294,18 +211,9 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="744" />
-                            <option name="y" value="436" />
+                            <option name="x" value="1732" />
+                            <option name="y" value="842" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_seek_present_to_title">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -315,8 +223,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="500" />
-                            <option name="y" value="436" />
+                            <option name="x" value="515" />
+                            <option name="y" value="1048" />
                           </Point>
                         </option>
                         <option name="myPositions">
