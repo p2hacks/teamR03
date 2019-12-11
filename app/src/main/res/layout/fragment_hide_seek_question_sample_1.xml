@@ -32,15 +32,6 @@
         tools:textSize="24sp" />
 
     <Button
-        android:id="@+id/back_sample_1_to_make_question_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="←"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:textSize="36sp" />
-
-    <Button
         android:id="@+id/input_sample_2_button"
         android:layout_width="220dp"
         android:layout_height="64dp"

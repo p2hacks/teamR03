@@ -52,10 +52,6 @@ class hide_seek_question_sample_1 : Fragment() {
         view.input_sample_3_button.setOnClickListener {
             findNavController().navigate(R.id.action_hide_seek_question_sample_1_to_hide_seek_question_sample_1_input_3)
         }
-        // 戻るボタンを押したときの遷移処理
-        view.back_sample_1_to_make_question_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_question_sample_1_to_hide_seek_make_question)
-        }
         return view
     }
 

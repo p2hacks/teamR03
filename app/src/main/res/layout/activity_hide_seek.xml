@@ -6,8 +6,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".hide_seek.hide_seek">
-    //navigationファイルを紐づけ
 
+<!--    toolbarの追加-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_hide_seek"
+        android:background="@color/colorPrimary"/>
+
+<!--    navigationファイルを紐づけ-->
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"

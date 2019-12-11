@@ -40,10 +40,6 @@ class hide_seek_question_sample_1_input_1 : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_hide_seek_question_sample_1_input_1, container, false)
-        // 戻るボタンを押したときの遷移処理
-        view.back_sample_input_1_to_sample_1_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_question_sample_1_input_1_to_hide_seek_question_sample_1)
-        }
         return view
     }
 
