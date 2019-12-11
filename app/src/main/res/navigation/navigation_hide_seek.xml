@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/hide_seek_title">
+<!--タイトルからの遷移-->
+    <fragment
+        android:id="@+id/hide_seek_title"
+        android:name="com.example.soba.hide_seek.hide_seek_title"
+        android:label="fragment_hide_seek_title"
+        tools:layout="@layout/fragment_hide_seek_title" >
+        <!--タイトル→プレゼントを隠す-->
+        <action
+            android:id="@+id/action_title_to_hide_present"
+            app:destination="@id/hide_seek_hide_present" />
+        <!--タイトル→プレゼントを探す-->
+        <action
+            android:id="@+id/action_title_to_seek_present"
+            app:destination="@id/hide_seek_seek_present" />
+    </fragment>
+<!--プレゼントを隠すからの遷移-->
+    <fragment
+        android:id="@+id/hide_seek_hide_present"
+        android:name="com.example.soba.hide_seek.hide_seek_hide_present"
+        android:label="fragment_hide_seek_hide_present"
+        tools:layout="@layout/fragment_hide_seek_hide_present" >
+        <!--プレゼントを隠す→問題を作る-->
+        <action
+            android:id="@+id/action_hide_present_to_make_question"
+            app:destination="@id/hide_seek_make_question" />
+        <!--プレゼントを隠す→タイトル-->
+        <action
+            android:id="@+id/action_hide_present_to_title"
+            app:destination="@id/hide_seek_title" />
+    </fragment>
+<!--問題を作るからの遷移-->
+    <fragment
+        android:id="@+id/hide_seek_make_question"
+        android:name="com.example.soba.hide_seek.hide_seek_make_question"
+        android:label="fragment_hide_seek_make_question"
+        tools:layout="@layout/fragment_hide_seek_make_question" >
+        <!--問題を作る→プレゼントを隠す-->
+        <action
+            android:id="@+id/action_make_question_to_hide_present"
+            app:destination="@id/hide_seek_hide_present" />
+    </fragment>
+
+<!--プレゼントを探すからの遷移-->
+    <fragment
+        android:id="@+id/hide_seek_seek_present"
+        android:name="com.example.soba.hide_seek.hide_seek_seek_present"
+        android:label="fragment_hide_seek_seek_present"
+        tools:layout="@layout/fragment_hide_seek_seek_present" >
+        <!--プレゼントを探す→タイトル-->
+        <action
+            android:id="@+id/action_seek_present_to_title"
+            app:destination="@id/hide_seek_title" />
+    </fragment>
+
+</navigation>
