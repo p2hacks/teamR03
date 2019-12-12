@@ -170,7 +170,7 @@
         android:id="@+id/hide_seek_seek_question3"
         android:name="com.example.soba.hide_seek.hide_seek_seek_question3"
         android:label="fragment_hide_seek_seek_question3"
-        tools:layout="@layout/fragm ent_hide_seek_seek_question3" >
+        tools:layout="@layout/fragment_hide_seek_seek_question3" >
         <!--問題解答3→正解表示の遷移-->
         <action
             android:id="@+id/action_hide_seek_seek_question3_to_hide_seek_seek_result"
