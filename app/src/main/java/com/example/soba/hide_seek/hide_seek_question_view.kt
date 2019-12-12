@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 
 import com.example.soba.R
-import kotlinx.android.synthetic.main.fragment_hide_seek_hide_present.view.*
 import kotlinx.android.synthetic.main.fragment_hide_seek_question_view.view.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -41,9 +40,17 @@ class hide_seek_question_view : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_hide_seek_question_view, container, false)
-        // 戻るボタンを押したときの遷移処理
-        view.back_questions_to_make_question.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_question_view_to_hide_seek_make_question)
+        // 問1ボタンを押したときの遷移処理
+        view.input_question_1_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_seek_question_view_to_hide_seek_question_input_1)
+        }
+        // 問2ボタンを押したときの遷移処理
+        view.input_question_2_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_seek_question_view_to_hide_seek_question_input_2)
+        }
+        // 問3ボタンを押したときの遷移処理
+        view.input_question_3_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_seek_question_view_to_hide_seek_question_input_3)
         }
         return view
     }

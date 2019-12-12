@@ -22,11 +22,6 @@ class hide_seek_seek_present : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_hide_seek_seek_present, container, false)
-
-        // 戻るボタンを押したときの遷移処理
-        view.back_seek_present_to_title_button.setOnClickListener {
-            findNavController().navigate(R.id.action_seek_present_to_title)
-        }
         return view
     }
 

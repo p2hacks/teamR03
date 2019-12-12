@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".hide_seek.hide_seek_question_view">
 
     <Button
-        android:id="@+id/back_questions_to_make_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="←"
-        tools:textSize="36sp" />
-</FrameLayout>
+        android:id="@+id/input_question_2_button"
+        android:layout_width="222dp"
+        android:layout_height="48dp"
+        android:text="問2"
+        app:layout_constraintBottom_toTopOf="@+id/input_question_3_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_question_1_button"
+        app:layout_constraintVertical_bias="0.446"
+        tools:textSize="24sp" />
+
+    <Button
+        android:id="@+id/input_question_3_button"
+        android:layout_width="222dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:text="問3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_question_2_button"
+        tools:textSize="24sp" />
+
+    <Button
+        android:id="@+id/input_question_1_button"
+        android:layout_width="222dp"
+        android:layout_height="48dp"
+        android:text="問1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215"
+        tools:textSize="24sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

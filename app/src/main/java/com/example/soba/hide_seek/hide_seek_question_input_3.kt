@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 
 import com.example.soba.R
-import kotlinx.android.synthetic.main.fragment_hide_seek_hide_present.view.*
+import kotlinx.android.synthetic.main.fragment_hide_seek_question_input_3.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,10 +18,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [hide_seek_hide_present.newInstance] factory method to
+ * Use the [hide_seek_question_input_3.newInstance] factory method to
  * create an instance of this fragment.
  */
-class hide_seek_hide_present : Fragment() {
+class hide_seek_question_input_3 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -39,15 +39,7 @@ class hide_seek_hide_present : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_hide_seek_hide_present, container, false)
-        // 問題を作るボタンを押したときの遷移処理
-        view.make_question_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_present_to_make_question)
-        }
-        // 隠し場所を入力ボタンを押したときの遷移処理
-        view.hide_place_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_hide_present_to_hide_seek_hide_place)
-        }
+        val view = inflater.inflate(R.layout.fragment_hide_seek_question_input_3, container, false)
         return view
     }
 
@@ -59,12 +51,12 @@ class hide_seek_hide_present : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment hide_seek_hide_present.
+         * @return A new instance of fragment hide_seek_question_input_3.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            hide_seek_hide_present().apply {
+            hide_seek_question_input_3().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

@@ -8,21 +8,6 @@
     tools:context=".hide_seek.hide_seek_title">
 
     <Button
-        android:id="@+id/back_home_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="307dp"
-        android:layout_marginBottom="649dp"
-        android:text="@string/back1"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/seek_present_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -3,13 +3,4 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hide_seek.hide_seek_hide_place">
-
-    <Button
-        android:id="@+id/back_place_to_hide_present_button"
-        android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:text="←"
-        tools:textSize="36sp" />
-
-</FrameLayout>
+    tools:context=".hide_seek.hide_seek_hide_place"/>
