@@ -9,9 +9,9 @@
 
     <Button
         android:id="@+id/seek_present_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="300dp"
         android:text="@string/seek_present"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,14 +22,14 @@
 
     <Button
         android:id="@+id/hide_present_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="190dp"
-        android:layout_marginBottom="208dp"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="260dp"
         android:text="@string/hide_present"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seek_present_button" />
+        app:layout_constraintTop_toBottomOf="@+id/seek_present_button"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

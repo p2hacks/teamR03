@@ -9,45 +9,48 @@
 
     <TextView
         android:id="@+id/question2_ans1"
-        android:layout_width="199dp"
-        android:layout_height="46dp"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
         android:text="解答1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question2_view"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/question2_ans2"
-        android:layout_width="243dp"
-        android:layout_height="51dp"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
         android:text="解答2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question2_ans1"
-        app:layout_constraintVertical_bias="0.195" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/question2_ans3"
-        android:layout_width="240dp"
-        android:layout_height="51dp"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="76dp"
         android:text="解答3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question2_ans2"
-        app:layout_constraintVertical_bias="0.439" />
+        app:layout_constraintVertical_bias="0.021" />
 
     <TextView
         android:id="@+id/question2_view"
-        android:layout_width="197dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="116dp"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
         android:text="問題文"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -56,11 +59,14 @@
 
     <Button
         android:id="@+id/next_sample2_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
         android:text="NEXT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question2_ans3" />
+        app:layout_constraintTop_toBottomOf="@+id/question2_ans3"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
