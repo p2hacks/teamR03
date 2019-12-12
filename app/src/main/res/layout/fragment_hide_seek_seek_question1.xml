@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/next_sample_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hide_seek.hide_seek_seek_question1">
+
+    <TextView
+        android:id="@+id/question1_view"
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="72dp"
+        android:text="問題文"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/question1_ans1"
+        android:layout_width="167dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:text="解答1"
+        app:layout_constraintBottom_toTopOf="@+id/question1_ans2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question1_view" />
+
+    <TextView
+        android:id="@+id/question1_ans2"
+        android:layout_width="217dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="68dp"
+        android:text="解答2"
+        app:layout_constraintBottom_toTopOf="@+id/question1_ans3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/question1_ans3"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="248dp"
+        android:text="解答3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/next_sample1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question1_ans3"
+        app:layout_constraintVertical_bias="0.465" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
