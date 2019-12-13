@@ -56,8 +56,8 @@ class exchange_input_total : Fragment() {
         view.setOnClickListener {
             if (inputTotalNumber.text != null) {
                 totalNumber = inputTotalNumber.text.toString().toInt()
-                text_view.text = totalNumber.toString()
-                Log.d("TAG", totalNumber.toString())
+                //デバッグ
+                //Log.d("TAG", totalNumber.toString())
             }
         }
         // Inflate the layout for this fragment
