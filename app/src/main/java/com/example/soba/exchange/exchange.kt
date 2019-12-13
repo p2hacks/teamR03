@@ -10,4 +10,5 @@ class exchange : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exchange)
     }
+
 }
