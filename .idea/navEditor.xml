@@ -11,19 +11,8 @@
                   <entry key="exchange_explanation">
                     <value>
                       <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="319" />
-                            <option name="y" value="-87" />
-                          </Point>
-                        </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_exchange_explanation_to_exchange_input_name">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                             <entry key="action_exchange_explanation_to_exchange_play">
                               <value>
                                 <LayoutPositions />
@@ -37,20 +26,9 @@
                   <entry key="exchange_input_name">
                     <value>
                       <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="30" />
-                            <option name="y" value="-115" />
-                          </Point>
-                        </option>
                         <option name="myPositions">
                           <map>
                             <entry key="action_exchange_input_name_to_exchange_explanation">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_exchange_input_name_to_exchange_input_total">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -63,12 +41,6 @@
                   <entry key="exchange_input_total">
                     <value>
                       <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-241" />
-                            <option name="y" value="-112" />
-                          </Point>
-                        </option>
                         <option name="myPositions">
                           <map>
                             <entry key="action_exchange_input_total_to_exchange_input_name">
@@ -83,23 +55,7 @@
                   </entry>
                   <entry key="exchange_play">
                     <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="629" />
-                            <option name="y" value="-79" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_exchange_play_to_exchange_explanation">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
+                      <LayoutPositions />
                     </value>
                   </entry>
                 </map>

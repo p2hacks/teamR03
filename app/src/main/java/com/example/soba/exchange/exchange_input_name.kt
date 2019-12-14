@@ -40,7 +40,6 @@ class exchange_input_name : Fragment() {
                 }
             }
         }
-        view.remainingNumber.text = "残り" + remaining.toString() + "人"
         view.nextButtonName.setOnClickListener{
             findNavController().navigate(R.id.action_exchange_input_name_to_exchange_explanation)
         }
