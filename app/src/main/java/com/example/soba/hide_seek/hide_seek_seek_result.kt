@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
 
 import com.example.soba.R
+import kotlinx.android.synthetic.main.fragment_hide_seek_seek_result.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,6 +32,13 @@ class hide_seek_seek_result : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+//        view.back_to_home_button.setOnClickListener {
+//            val fragmentManager = fragmentManager
+//            val stackCount = fragmentManager?.backStackEntryCount
+//            for (i in 0..4){
+//            fragmentManager?.popBackStack()
+//            }
+//        }
     }
 
     override fun onCreateView(
@@ -39,6 +48,19 @@ class hide_seek_seek_result : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_hide_seek_seek_result, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        back_to_home_button.setOnClickListener {
+            val fragmentManager = fragmentManager
+            val stackCount = fragmentManager?.backStackEntryCount
+            for (i in 0..4){
+                fragmentManager?.popBackStack()
+            }
+        }
+    }
+
 
 
     companion object {
