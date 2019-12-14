@@ -60,6 +60,7 @@ class hide_seek_seek_question2 : Fragment() {
             }
             else{
                 //不正解時の処理
+                goToHomeButton2.visibility = View.VISIBLE
                 wrongImage.visibility = View.VISIBLE
                 view.goToQuestion3Text.text = "ざんねん！もういっかいやってみよう！"
             }
@@ -77,6 +78,7 @@ class hide_seek_seek_question2 : Fragment() {
             }
             else{
                 //不正解時の処理
+                goToHomeButton2.visibility = View.VISIBLE
                 wrongImage.visibility = View.VISIBLE
                 view.goToQuestion3Text.text = "ざんねん！もういっかいやってみよう！"
             }
@@ -94,6 +96,7 @@ class hide_seek_seek_question2 : Fragment() {
             }
             else{
                 //不正解時の処理
+                goToHomeButton2.visibility = View.VISIBLE
                 wrongImage.visibility = View.VISIBLE
                 view.goToQuestion3Text.text = "ざんねん！もういっかいやってみよう！"
             }
@@ -102,6 +105,12 @@ class hide_seek_seek_question2 : Fragment() {
         //次へ進むボタン
         view.goQuestion3.setOnClickListener {
             findNavController().navigate(R.id.action_hide_seek_seek_question2_to_hide_seek_seek_question3)
+        }
+        //もういっかいやるボタン
+        view.goToHomeButton2.setOnClickListener {
+            for (i in 0..1) {
+                findNavController().popBackStack()
+            }
         }
     }
 }

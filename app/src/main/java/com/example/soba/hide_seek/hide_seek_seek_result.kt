@@ -33,7 +33,6 @@ class hide_seek_seek_result : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         back_to_home_button.setOnClickListener {
-            val fragmentManager = fragmentManager
             for (i in 0..4){
                 findNavController().popBackStack()
             }
