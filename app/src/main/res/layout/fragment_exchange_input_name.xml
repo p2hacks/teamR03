@@ -68,7 +68,6 @@
         android:id="@+id/remainingNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="残り・・・人"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/inputName"
         app:layout_constraintStart_toStartOf="@+id/inputName" />
