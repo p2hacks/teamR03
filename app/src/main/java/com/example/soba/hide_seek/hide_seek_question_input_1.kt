@@ -50,7 +50,7 @@ class hide_seek_question_input_1 : Fragment() {
             }
 
             //ボタン押すとアニメーションの再生
-            animationView2.setAnimation(R.raw.save_checked)
+            animationView2.setAnimation(R.raw.checksave)
             animationView2.playAnimation()
         }
         view.backhome1_button.setOnClickListener {

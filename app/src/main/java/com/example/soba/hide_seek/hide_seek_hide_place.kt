@@ -41,7 +41,8 @@ class hide_seek_hide_place : Fragment() {
                 apply()
             }
             //ボタン押すとアニメーションの再生
-            animationView.setAnimation(R.raw.save_checked)
+            //View.bringToFront(R.raw.checksave)
+            animationView.setAnimation(R.raw.checksave)
             animationView.playAnimation()
         }
     }

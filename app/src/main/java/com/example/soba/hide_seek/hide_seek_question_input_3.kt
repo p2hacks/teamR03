@@ -48,7 +48,7 @@ class hide_seek_question_input_3 : Fragment() {
                 apply()
             }
             //ボタン押すとアニメーションの再生
-            animationView4.setAnimation(R.raw.save_checked)
+            animationView4.setAnimation(R.raw.checksave)
             animationView4.playAnimation()
         }
         view.backhome3_button.setOnClickListener {
