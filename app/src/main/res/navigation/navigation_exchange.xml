@@ -1,30 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_exchange"
-            app:startDestination="@id/exchange_input_total">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_exchange"
+    app:startDestination="@id/exchange_input_total">
 
-    <fragment android:id="@+id/exchange_explanation" android:name="com.example.soba.exchange.exchange_explanation"
-              android:label="fragment_exchange_explanation" tools:layout="@layout/fragment_exchange_explanation">
-        <action android:id="@+id/action_exchange_explanation_to_exchange_play" app:destination="@id/exchange_play"/>
-        <action android:id="@+id/action_exchange_explanation_to_exchange_input_name"
-                app:destination="@id/exchange_input_name"/>
+    //説明画面
+    <fragment
+        android:id="@+id/exchange_explanation"
+        android:name="com.example.soba.exchange.exchange_explanation"
+        android:label="fragment_exchange_explanation"
+        tools:layout="@layout/fragment_exchange_explanation">
+        //説明画面　－＞　開始画面
+        <action
+            android:id="@+id/action_exchange_explanation_to_exchange_play"
+            app:destination="@id/exchange_play" />
+        //説明画面　－＞　名前入力画面
     </fragment>
-    <fragment android:id="@+id/exchange_input_total" android:name="com.example.soba.exchange.exchange_input_total"
-              android:label="fragment_exchange_input_total" tools:layout="@layout/fragment_exchange_input_total">
-        <action android:id="@+id/action_exchange_input_total_to_exchange_input_name"
-                app:destination="@id/exchange_input_name"/>
+
+    //人数入力画面
+    <fragment
+        android:id="@+id/exchange_input_total"
+        android:name="com.example.soba.exchange.exchange_input_total"
+        android:label="fragment_exchange_input_total"
+        tools:layout="@layout/fragment_exchange_input_total">
+        //人数入力画面　－＞　名前入力画面
+        <action
+            android:id="@+id/action_exchange_input_total_to_exchange_input_name"
+            app:destination="@id/exchange_input_name" />
     </fragment>
-    <fragment android:id="@+id/exchange_input_name" android:name="com.example.soba.exchange.exchange_input_name"
-              android:label="fragment_exchange_input_name" tools:layout="@layout/fragment_exchange_input_name">
-        <action android:id="@+id/action_exchange_input_name_to_exchange_explanation"
-                app:destination="@id/exchange_explanation"/>
-        <action android:id="@+id/action_exchange_input_name_to_exchange_input_total"
-                app:destination="@id/exchange_input_total"/>
+
+    //名前入力画面
+    <fragment
+        android:id="@+id/exchange_input_name"
+        android:name="com.example.soba.exchange.exchange_input_name"
+        android:label="fragment_exchange_input_name"
+        tools:layout="@layout/fragment_exchange_input_name">
+        //名前入力画面　－＞　説明画面
+        <action
+            android:id="@+id/action_exchange_input_name_to_exchange_explanation"
+            app:destination="@id/exchange_explanation" />
+        //名前入力画面　－＞　人数入力画面
     </fragment>
-    <fragment android:id="@+id/exchange_play" android:name="com.example.soba.exchange.exchange_play"
-              android:label="fragment_exchange_play" tools:layout="@layout/fragment_exchange_play">
-        <action android:id="@+id/action_exchange_play_to_exchange_explanation"
-                app:destination="@id/exchange_explanation"/>
-    </fragment>
+
+    //開始画面
+    <fragment
+        android:id="@+id/exchange_play"
+        android:name="com.example.soba.exchange.exchange_play"
+        android:label="fragment_exchange_play"
+        tools:layout="@layout/fragment_exchange_play"/>
 </navigation>
