@@ -3,11 +3,13 @@ package com.example.soba.hide_seek
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
+import androidx.navigation.fragment.findNavController
 
 import com.example.soba.R
 import kotlinx.android.synthetic.main.fragment_hide_seek_seek_result.*
@@ -33,10 +35,10 @@ class hide_seek_seek_result : Fragment() {
         back_to_home_button.setOnClickListener {
             val fragmentManager = fragmentManager
             for (i in 0..4){
-                fragmentManager?.popBackStack()
+                findNavController().popBackStack()
             }
         }
-        //sheredPreferencesで保存したファイルの読み取りと表示
+        //sharedPreferencesで保存したファイルの読み取りと表示
         val pref = activity?.getSharedPreferences("sharedHidePlace", Context.MODE_PRIVATE)
         val stringValue = pref?.getString("hidePlace", "スマホの持ち主に聞いてね")
         view.result_place.text = stringValue
