@@ -31,12 +31,12 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_hide_present_to_make_question">
+                            <entry key="action_hide_seek_hide_present_to_hide_seek_hide_place">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_hide_seek_hide_present_to_hide_seek_hide_place">
+                            <entry key="action_hide_seek_hide_present_to_hide_seek_question_view2">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -58,11 +58,6 @@
                         <option name="myPositions">
                           <map>
                             <entry key="action_hide_seek_make_question_to_hide_seek_question_sample_1">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_hide_seek_make_question_to_hide_seek_question_view">
                               <value>
                                 <LayoutPositions />
                               </value>
