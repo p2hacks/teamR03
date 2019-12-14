@@ -18,21 +18,25 @@ var totalNumber: Int = 0
 
 class exchange_input_total : Fragment() {
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
 
 
-        ): View? {
+
+    ): View? {
         val view = inflater.inflate(R.layout.fragment_exchange_input_total, container, false)
         view.nextButtonTotal.setOnClickListener {
-            if (inputTotalNumber.text != null) {
-                //　次へボタン を押したときに数字が入力されていれば、その数字を取得
+            //　次へボタン を押したときに数字が入力されていれば、その数字を取得
                 totalNumber = inputTotalNumber.text.toString().toInt()
-            }
-            findNavController().navigate(R.id.action_exchange_input_total_to_exchange_input_name)
-    }
+                findNavController().navigate(R.id.action_exchange_input_total_to_exchange_input_name)
+        }
         return view
     }
 }
