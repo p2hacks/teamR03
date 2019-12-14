@@ -9,4 +9,8 @@
     <string name="make_question">問題を作る</string>
     <string name="question_sample_set1">サンプルセット１</string>
     <string name="question_yourself_set">自作問題セット</string>
+    <string name="trueAnswer">正答</string>
+    <string name="falseAnswer">誤答</string>
+    <string name="createQuestion">問題文を入力</string>
+    <string name="choice">選択肢を入力</string>
 </resources>

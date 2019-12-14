@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout11"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hide_seek.hide_seek_question_sample_1_input_3" >
+    tools:context=".hide_seek.hide_seek_sample.hide_seek_question_sample_1_input_3" >
 
     <CheckBox
         android:id="@+id/check_correct_3"
