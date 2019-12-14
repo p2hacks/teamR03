@@ -38,7 +38,5 @@ dependencies {
     implementation "android.arch.navigation:navigation-ui:1.0.0"
     implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0"
     implementation "android.arch.navigation:navigation-ui-ktx:1.0.0"
-    //GSONライブラリ
-    implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.airbnb.android:lottie:3.3.1'
 }
