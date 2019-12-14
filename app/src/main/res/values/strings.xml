@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">soba</string>
-    <string name="seek_present">プレゼントを探す</string>
+    <string name="seek_present">プレゼントをさがす</string>
     <string name="hide_present">プレゼントを隠す</string>
     <string name="back1">←</string>
 
@@ -8,4 +8,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="make_question">問題を作る</string>
     <string name="getName"/>
+    <string name="question_sample_set1">サンプルセット１</string>
+    <string name="question_yourself_set">自作問題セット</string>
+    <string name="trueAnswer">正答</string>
+    <string name="falseAnswer">誤答</string>
+    <string name="createQuestion">問題文を入力</string>
+    <string name="choice">選択肢を入力</string>
+    <string name="goToNext">つぎへすすむ</string>
+    <string name="goToNextText">せいかい！あと2もん！</string>
 </resources>
