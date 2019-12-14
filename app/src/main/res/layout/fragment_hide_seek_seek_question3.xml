@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout15"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hide_seek.hide_seek_seek_question3" >
+    tools:context=".hide_seek.hide_seek_seek_question3">
 
     <TextView
         android:id="@+id/question3_view"
@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100" />
+        app:layout_constraintVertical_bias="0.185" />
 
     <TextView
         android:id="@+id/question3_ans1"
@@ -68,4 +68,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question3_ans3"
         app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="155dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="70dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

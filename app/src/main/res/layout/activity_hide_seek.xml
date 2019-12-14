@@ -9,10 +9,15 @@
 
 <!--    toolbarの追加-->
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_hide_seek"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:id="@+id/toolbar_hide_seek"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nav_host_fragment" />
 
 <!--    navigationファイルを紐づけ-->
     <fragment

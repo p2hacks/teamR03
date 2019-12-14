@@ -5,94 +5,129 @@
     android:id="@+id/frameLayout7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hide_seek.hide_seek_question_input_2" >
+    tools:context=".hide_seek.hide_seek_question_input_2">
 
-    <CheckBox
-        android:id="@+id/check_correct_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="正解ならチェック"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793" />
-
-    <CheckBox
-        android:id="@+id/check_correct_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="正解ならチェック"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.583" />
-
-    <TextView
-        android:id="@+id/input_choice_3"
-        android:layout_width="149dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="120dp"
-        android:text="選択肢を入力"
+    <EditText
+        android:id="@+id/edit_question2"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/createQuestion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintHorizontal_bias="0.602"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_choice_2"
-        app:layout_constraintVertical_bias="0.764" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
 
-    <TextView
-        android:id="@+id/input_choice_2"
-        android:layout_width="149dp"
-        android:layout_height="55dp"
-        android:text="選択肢を入力"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/input2_choice1"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/choice"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.841"
-        app:layout_constraintStart_toEndOf="@+id/check_correct_2"
-        app:layout_constraintTop_toBottomOf="@+id/input_choice_1"
-        app:layout_constraintVertical_bias="0.296" />
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_question2" />
+
+    <EditText
+        android:id="@+id/input2_choice3"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input2_choice2" />
 
     <TextView
-        android:id="@+id/input_question"
-        android:layout_width="291dp"
-        android:layout_height="49dp"
-        android:text="問題文を入力してね"
+        android:id="@+id/textView"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/trueAnswer"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintBottom_toTopOf="@+id/input2_choice2"
+        app:layout_constraintEnd_toStartOf="@+id/input2_choice1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_question2"
+        app:layout_constraintVertical_bias="0.572" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/falseAnswer"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintBottom_toTopOf="@+id/question2_save"
+        app:layout_constraintEnd_toStartOf="@+id/input2_choice3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input2_choice2"
+        app:layout_constraintVertical_bias="0.572" />
+
+    <EditText
+        android:id="@+id/input2_choice2"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input2_choice1" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/falseAnswer"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintBottom_toTopOf="@+id/input2_choice3"
+        app:layout_constraintEnd_toStartOf="@+id/input2_choice2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input2_choice1"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <Button
+        android:id="@+id/question2_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:text="保存"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintTop_toBottomOf="@+id/input2_choice3"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/input_choice_1"
-        android:layout_width="149dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="432dp"
-        android:text="選択肢を入力"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.77"
-        app:layout_constraintStart_toEndOf="@+id/check_correct_1"
-        app:layout_constraintTop_toBottomOf="@+id/input_question"
-        app:layout_constraintVertical_bias="0.745" />
-
-    <CheckBox
-        android:id="@+id/check_correct_1"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="正解ならチェック"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.367" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="85dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="137dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
