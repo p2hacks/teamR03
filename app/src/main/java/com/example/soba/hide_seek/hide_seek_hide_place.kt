@@ -11,6 +11,7 @@ import androidx.core.content.edit
 import androidx.navigation.fragment.findNavController
 
 import com.example.soba.R
+import kotlinx.android.synthetic.main.fragment_hide_seek_hide_place.*
 import kotlinx.android.synthetic.main.fragment_hide_seek_hide_place.view.*
 import kotlinx.android.synthetic.main.fragment_hide_seek_hide_present.view.*
 import kotlinx.android.synthetic.main.fragment_hide_seek_make_question.view.*
@@ -39,6 +40,10 @@ class hide_seek_hide_place : Fragment() {
                 putString("hidePlace", hidePlace)
                 apply()
             }
+            //ボタン押すとアニメーションの再生
+            animationView.setAnimation(R.raw.save_checked)
+            animationView.loop(false)
+            animationView.playAnimation()
         }
     }
 }

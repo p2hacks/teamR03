@@ -11,6 +11,7 @@ import androidx.core.content.edit
 import androidx.navigation.fragment.findNavController
 
 import com.example.soba.R
+import kotlinx.android.synthetic.main.fragment_hide_seek_question_input_3.*
 import kotlinx.android.synthetic.main.fragment_hide_seek_question_input_3.view.*
 
 
@@ -46,6 +47,9 @@ class hide_seek_question_input_3 : Fragment() {
                 putString("choice3", choice3)
                 apply()
             }
+            //ボタン押すとアニメーションの再生
+            animationView4.setAnimation(R.raw.save_checked)
+            animationView4.playAnimation()
         }
     }
 }
