@@ -11,6 +11,7 @@ import androidx.core.content.edit
 import androidx.navigation.fragment.findNavController
 
 import com.example.soba.R
+import kotlinx.android.synthetic.main.fragment_hide_seek_question_input_1.*
 import kotlinx.android.synthetic.main.fragment_hide_seek_question_input_1.view.*
 import org.json.JSONArray
 
@@ -47,6 +48,10 @@ class hide_seek_question_input_1 : Fragment() {
                 putString("choice3", choice3)
                 apply()
             }
+
+            //ボタン押すとアニメーションの再生
+            animationView2.setAnimation(R.raw.save_checked)
+            animationView2.playAnimation()
         }
         view.backhome1_button.setOnClickListener {
             for (i in 0..2){
