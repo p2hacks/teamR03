@@ -13,4 +13,6 @@
     <string name="falseAnswer">誤答</string>
     <string name="createQuestion">問題文を入力</string>
     <string name="choice">選択肢を入力</string>
+    <string name="goToNext" translatable="false">つぎへすすむ</string>
+    <string name="goToNextText">せいかい！あと2もん！</string>
 </resources>
