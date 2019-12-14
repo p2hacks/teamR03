@@ -33,4 +33,11 @@
         app:layout_constraintTop_toBottomOf="@+id/seek_present_button"
         app:layout_constraintVertical_bias="0.0" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="290dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
