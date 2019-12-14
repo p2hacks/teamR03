@@ -33,14 +33,13 @@ class hide_seek_seek_result : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         back_to_home_button.setOnClickListener {
-            val fragmentManager = fragmentManager
             for (i in 0..4){
                 findNavController().popBackStack()
             }
         }
         //sharedPreferencesで保存したファイルの読み取りと表示
         val pref = activity?.getSharedPreferences("sharedHidePlace", Context.MODE_PRIVATE)
-        val stringValue = pref?.getString("hidePlace", "スマホの持ち主に聞いてね")
+        val stringValue = pref?.getString("hidePlace", "スマホのもちぬしにきいてね")
         view.result_place.text = stringValue
     }
 }

@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 
 import com.example.soba.R
+import kotlinx.android.synthetic.main.fragment_hide_seek_seek_question2.*
 import kotlinx.android.synthetic.main.fragment_hide_seek_seek_question2.view.*
 
 
@@ -48,21 +49,67 @@ class hide_seek_seek_question2 : Fragment() {
 
         //正誤チェック
         view.question2_ans1.setOnClickListener {
+            question2_view.visibility = View.GONE
+            question2_ans1.visibility = View.GONE
+            question2_ans2.visibility = View.GONE
+            question2_ans3.visibility = View.GONE
             if (choiceList[0] == choice1) {
                 //ここに正解時の処理
-                findNavController().navigate(R.id.action_hide_seek_seek_question2_to_hide_seek_seek_question3)
+                goQuestion3.visibility = View.VISIBLE
+                correctImage.visibility = View.VISIBLE
             }
+            else{
+                //不正解時の処理
+                goToHomeButton2.visibility = View.VISIBLE
+                wrongImage.visibility = View.VISIBLE
+                view.goToQuestion3Text.text = "ざんねん！もういっかいやってみよう！"
+            }
+            goToQuestion3Text.visibility = View.VISIBLE
         }
         view.question2_ans2.setOnClickListener {
+            question2_view.visibility = View.GONE
+            question2_ans1.visibility = View.GONE
+            question2_ans2.visibility = View.GONE
+            question2_ans3.visibility = View.GONE
             if (choiceList[1] == choice1) {
                 //ここに正解時の処理
-                findNavController().navigate(R.id.action_hide_seek_seek_question2_to_hide_seek_seek_question3)
+                goQuestion3.visibility = View.VISIBLE
+                correctImage.visibility = View.VISIBLE
             }
+            else{
+                //不正解時の処理
+                goToHomeButton2.visibility = View.VISIBLE
+                wrongImage.visibility = View.VISIBLE
+                view.goToQuestion3Text.text = "ざんねん！もういっかいやってみよう！"
+            }
+            goToQuestion3Text.visibility = View.VISIBLE
         }
         view.question2_ans3.setOnClickListener {
+            question2_view.visibility = View.GONE
+            question2_ans1.visibility = View.GONE
+            question2_ans2.visibility = View.GONE
+            question2_ans3.visibility = View.GONE
             if (choiceList[2] == choice1) {
                 //ここに正解時の処理
-                findNavController().navigate(R.id.action_hide_seek_seek_question2_to_hide_seek_seek_question3)
+                goQuestion3.visibility = View.VISIBLE
+                correctImage.visibility = View.VISIBLE
+            }
+            else{
+                //不正解時の処理
+                goToHomeButton2.visibility = View.VISIBLE
+                wrongImage.visibility = View.VISIBLE
+                view.goToQuestion3Text.text = "ざんねん！もういっかいやってみよう！"
+            }
+            goToQuestion3Text.visibility = View.VISIBLE
+        }
+        //次へ進むボタン
+        view.goQuestion3.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_seek_seek_question2_to_hide_seek_seek_question3)
+        }
+        //もういっかいやるボタン
+        view.goToHomeButton2.setOnClickListener {
+            for (i in 0..1) {
+                findNavController().popBackStack()
             }
         }
     }

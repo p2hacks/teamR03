@@ -48,5 +48,10 @@ class hide_seek_question_input_1 : Fragment() {
                 apply()
             }
         }
+        view.backhome1_button.setOnClickListener {
+            for (i in 0..2){
+                findNavController().popBackStack()
+            }
+        }
     }
 }
