@@ -23,10 +23,6 @@ class hide_seek_seek_question3 : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_hide_seek_seek_question3, container, false)
-        // 正解だったときの遷移処理
-        view.next_sample3_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_seek_question3_to_hide_seek_seek_result)
-        }
         return view    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -47,5 +43,25 @@ class hide_seek_seek_question3 : Fragment() {
         view.question3_ans1.text = choiceList[0]
         view.question3_ans2.text = choiceList[1]
         view.question3_ans3.text = choiceList[2]
+
+        //正誤チェック
+        view.question3_ans1.setOnClickListener {
+            if (choiceList[0] == choice1) {
+                //ここに正解時の処理
+                findNavController().navigate(R.id.action_hide_seek_seek_question3_to_hide_seek_seek_result)
+            }
+        }
+        view.question3_ans2.setOnClickListener {
+            if (choiceList[1] == choice1) {
+                //ここに正解時の処理
+                findNavController().navigate(R.id.action_hide_seek_seek_question3_to_hide_seek_seek_result)
+            }
+        }
+        view.question3_ans3.setOnClickListener {
+            if (choiceList[2] == choice1) {
+                //ここに正解時の処理
+                findNavController().navigate(R.id.action_hide_seek_seek_question3_to_hide_seek_seek_result)
+            }
+        }
     }
 }

@@ -24,10 +24,6 @@ class hide_seek_seek_question2 : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_hide_seek_seek_question2, container, false)
-        // 正解だったときの遷移処理
-        view.next_sample2_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_seek_question2_to_hide_seek_seek_question3)
-        }
         return view
     }
 
@@ -49,5 +45,25 @@ class hide_seek_seek_question2 : Fragment() {
         view.question2_ans1.text = choiceList[0]
         view.question2_ans2.text = choiceList[1]
         view.question2_ans3.text = choiceList[2]
+
+        //正誤チェック
+        view.question2_ans1.setOnClickListener {
+            if (choiceList[0] == choice1) {
+                //ここに正解時の処理
+                findNavController().navigate(R.id.action_hide_seek_seek_question2_to_hide_seek_seek_question3)
+            }
+        }
+        view.question2_ans2.setOnClickListener {
+            if (choiceList[1] == choice1) {
+                //ここに正解時の処理
+                findNavController().navigate(R.id.action_hide_seek_seek_question2_to_hide_seek_seek_question3)
+            }
+        }
+        view.question2_ans3.setOnClickListener {
+            if (choiceList[2] == choice1) {
+                //ここに正解時の処理
+                findNavController().navigate(R.id.action_hide_seek_seek_question2_to_hide_seek_seek_question3)
+            }
+        }
     }
 }

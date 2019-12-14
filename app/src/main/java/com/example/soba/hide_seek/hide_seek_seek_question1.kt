@@ -23,10 +23,6 @@ class hide_seek_seek_question1 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_hide_seek_seek_question1, container, false)
-        // 正解だったときの遷移処理
-        view.next_sample1_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_seek_seek_question1_to_hide_seek_seek_question2)
-        }
         return view
     }
 
@@ -42,11 +38,31 @@ class hide_seek_seek_question1 : Fragment() {
         val choice1 = pref?.getString("choice1", "選択肢が設定されていません")
         val choice2 = pref?.getString("choice2", "選択肢が設定されていません")
         val choice3 = pref?.getString("choice3", "選択肢が設定されていません")
-        val choiceList = listOf(choice1,choice2,choice3).shuffled()
+        val choiceList = listOf(choice1, choice2, choice3).shuffled()
 
         //選択肢を表示
         view.question1_ans1.text = choiceList[0]
         view.question1_ans2.text = choiceList[1]
         view.question1_ans3.text = choiceList[2]
+
+        //正誤チェック
+        view.question1_ans1.setOnClickListener {
+            if (choiceList[0] == choice1) {
+                //ここに正解時の処理
+                findNavController().navigate(R.id.action_hide_seek_seek_question1_to_hide_seek_seek_question2)
+            }
+        }
+        view.question1_ans2.setOnClickListener {
+            if (choiceList[1] == choice1) {
+                //ここに正解時の処理
+                findNavController().navigate(R.id.action_hide_seek_seek_question1_to_hide_seek_seek_question2)
+            }
+        }
+        view.question1_ans3.setOnClickListener {
+            if (choiceList[2] == choice1) {
+                //ここに正解時の処理
+                findNavController().navigate(R.id.action_hide_seek_seek_question1_to_hide_seek_seek_question2)
+            }
+        }
     }
 }
