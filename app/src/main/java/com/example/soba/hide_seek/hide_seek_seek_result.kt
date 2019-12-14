@@ -11,25 +11,13 @@ import androidx.fragment.app.FragmentManager
 
 import com.example.soba.R
 import kotlinx.android.synthetic.main.fragment_hide_seek_seek_result.*
-
+import kotlinx.android.synthetic.main.fragment_hide_seek_seek_result.view.*
 
 
 /**
  * A simple [Fragment] subclass.
  */
 class hide_seek_seek_result : Fragment() {
-
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,13 +32,10 @@ class hide_seek_seek_result : Fragment() {
 
         back_to_home_button.setOnClickListener {
             val fragmentManager = fragmentManager
-            val stackCount = fragmentManager?.backStackEntryCount
             for (i in 0..4){
                 fragmentManager?.popBackStack()
             }
         }
-    }
-
         //sheredPreferencesで保存したファイルの読み取りと表示
         val pref = activity?.getSharedPreferences("sharedHidePlace", Context.MODE_PRIVATE)
         val stringValue = pref?.getString("hidePlace", "スマホの持ち主に聞いてね")
