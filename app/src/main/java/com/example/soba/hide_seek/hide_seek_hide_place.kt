@@ -45,5 +45,9 @@ class hide_seek_hide_place : Fragment() {
             animationView.setAnimation(R.raw.checksave)
             animationView.playAnimation()
         }
+        //入力内容をテキストボックスにも保持
+        val pref = activity?.getSharedPreferences("sharedHidePlace", Context.MODE_PRIVATE)
+        val stringValue = pref?.getString("hidePlace", null)
+        view.edit_hidePlace.setText(stringValue)
     }
 }
