@@ -7,6 +7,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="make_question">問題を作る</string>
+    <string name="getName"/>
     <string name="question_sample_set1">サンプルセット１</string>
     <string name="question_yourself_set">自作問題セット</string>
     <string name="trueAnswer">正答</string>

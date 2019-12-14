@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/frameLayout4"
              android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".exchange.exchange_explanation">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+             android:layout_height="match_parent" tools:context=".exchange.exchange_explanation">
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"/>
+        android:layout_height="match_parent">
 
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp" android:text="開始" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="322dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
+            android:text="プレゼントに１から最後まで番号を振って下さい"
+            android:textAlignment="center" android:textSize="24sp"
+            android:textStyle="bold" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.447"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="325dp"
+            android:layout_height="74dp" android:layout_marginTop="64dp"
+            android:text="準備ができたら、開始ボタンを押して交換会スタート！" android:textAlignment="center"
+            android:textSize="24sp" android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
