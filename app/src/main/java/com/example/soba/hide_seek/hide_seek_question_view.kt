@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 
 import com.example.soba.R
+import kotlinx.android.synthetic.main.fragment_hide_seek_question_view.*
 import kotlinx.android.synthetic.main.fragment_hide_seek_question_view.view.*
 
 // TODO: Rename parameter arguments, choose names that match
