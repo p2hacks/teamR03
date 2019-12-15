@@ -37,32 +37,16 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView10"
-        android:layout_width="212dp"
-        android:layout_height="207dp"
+        android:layout_width="428dp"
+        android:layout_height="204dp"
         android:layout_gravity="center"
         android:layout_margin="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/happy_birthday" />
-
-<!--    <com.airbnb.lottie.LottieAnimationView-->
-<!--        android:id="@+id/animationView20"-->
-<!--        android:layout_width="212dp"-->
-<!--        android:layout_height="207dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_margin="20dp"-->
-<!--        android:layout_marginBottom="20dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:lottie_autoPlay="true"-->
-<!--        app:lottie_loop="true"-->
-<!--        app:lottie_rawRes="@raw/happy_birthday"-->
-<!--        app:lottie_colorFilter="FF3366"/>-->
+        app:lottie_rawRes="@raw/red_gift" />
 </androidx.constraintlayout.widget.ConstraintLayout>
