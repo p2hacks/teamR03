@@ -34,8 +34,9 @@
     <Button
         android:id="@+id/hideSeekButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginTop="100dp"
-        android:layout_marginEnd="8dp" android:text="かくれんぼ"
+        android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp" android:background="#CCFFFFFF"
+        android:text="プレゼント探し" android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/homebar"/>
     <Button
@@ -43,7 +44,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
-        android:text="プレゼント交換会" app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hideSeekButton"/>
+        android:background="#CCFFFFFF" android:text="プレゼント交換"
+        android:textSize="24sp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/hideSeekButton"
+        app:layout_constraintVertical_bias="0.382"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

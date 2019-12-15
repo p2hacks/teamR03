@@ -44,6 +44,7 @@ class exchange_play : Fragment() {
 
         view.nextButtonPreGeter.setOnClickListener {
             if(listManager >= afterShuffleList.size - 1) {
+                nameList.clear()
                 activity?.startActivity(Intent(activity?.applicationContext, MainActivity::class.java))
             }
             if(listManager < afterShuffleList.size - 1) listManager += 1
