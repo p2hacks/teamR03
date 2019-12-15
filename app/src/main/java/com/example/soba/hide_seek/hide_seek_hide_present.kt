@@ -42,11 +42,11 @@ class hide_seek_hide_present : Fragment() {
         val view = inflater.inflate(R.layout.fragment_hide_seek_hide_present, container, false)
         // 問題を作るボタンを押したときの遷移処理
         view.make_question_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_present_to_make_question)
+            findNavController().navigate(R.id.action_hide_seek_hide_present_to_hide_seek_question_view2)
         }
-        // 戻るボタンを押したときの遷移処理
-        view.back_hide_present_to_title_button.setOnClickListener {
-            findNavController().navigate(R.id.action_hide_present_to_title)
+        // 隠し場所を入力ボタンを押したときの遷移処理
+        view.hide_place_button.setOnClickListener {
+            findNavController().navigate(R.id.action_hide_seek_hide_present_to_hide_seek_hide_place)
         }
         return view
     }

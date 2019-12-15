@@ -2,9 +2,9 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation_graph"
+    android:id="@+id/navigation_hide_seek"
     app:startDestination="@id/hide_seek_title">
-<!--タイトルからの遷移-->
+<!--タイトル-->
     <fragment
         android:id="@+id/hide_seek_title"
         android:name="com.example.soba.hide_seek.hide_seek_title"
@@ -19,43 +19,166 @@
             android:id="@+id/action_title_to_seek_present"
             app:destination="@id/hide_seek_seek_present" />
     </fragment>
-<!--プレゼントを隠すからの遷移-->
+<!--プレゼントを隠す-->
     <fragment
         android:id="@+id/hide_seek_hide_present"
         android:name="com.example.soba.hide_seek.hide_seek_hide_present"
         android:label="fragment_hide_seek_hide_present"
         tools:layout="@layout/fragment_hide_seek_hide_present" >
         <!--プレゼントを隠す→問題を作る-->
+        <!--プレゼントを隠す→隠し場所を入力-->
         <action
-            android:id="@+id/action_hide_present_to_make_question"
-            app:destination="@id/hide_seek_make_question" />
-        <!--プレゼントを隠す→タイトル-->
+            android:id="@+id/action_hide_seek_hide_present_to_hide_seek_hide_place"
+            app:destination="@id/hide_seek_hide_place" />
+        <!--プレゼントを隠す→問題を入力-->
         <action
-            android:id="@+id/action_hide_present_to_title"
-            app:destination="@id/hide_seek_title" />
+            android:id="@+id/action_hide_seek_hide_present_to_hide_seek_question_view2"
+            app:destination="@id/hide_seek_question_view" />
     </fragment>
-<!--問題を作るからの遷移-->
+<!--問題を作る-->
     <fragment
         android:id="@+id/hide_seek_make_question"
-        android:name="com.example.soba.hide_seek.hide_seek_make_question"
+        android:name="com.example.soba.hide_seek.hide_seek_sample.hide_seek_make_question"
         android:label="fragment_hide_seek_make_question"
         tools:layout="@layout/fragment_hide_seek_make_question" >
-        <!--問題を作る→プレゼントを隠す-->
+        <!--問題を作る→問題一覧-->
+        <!--問題を作る→サンプル問題-->
         <action
-            android:id="@+id/action_make_question_to_hide_present"
-            app:destination="@id/hide_seek_hide_present" />
+            android:id="@+id/action_hide_seek_make_question_to_hide_seek_question_sample_1"
+            app:destination="@id/hide_seek_question_sample_1" />
     </fragment>
 
-<!--プレゼントを探すからの遷移-->
+<!--プレゼントを探す-->
     <fragment
         android:id="@+id/hide_seek_seek_present"
         android:name="com.example.soba.hide_seek.hide_seek_seek_present"
         android:label="fragment_hide_seek_seek_present"
         tools:layout="@layout/fragment_hide_seek_seek_present" >
-        <!--プレゼントを探す→タイトル-->
+        <!--問題を探す→問題解答1の遷移-->
         <action
-            android:id="@+id/action_seek_present_to_title"
-            app:destination="@id/hide_seek_title" />
+            android:id="@+id/action_hide_seek_seek_present_to_hide_seek_seek_question1"
+            app:destination="@id/hide_seek_seek_question1" />
     </fragment>
+
+<!--問題一覧-->
+    <fragment
+        android:id="@+id/hide_seek_question_view"
+        android:name="com.example.soba.hide_seek.hide_seek_question_view"
+        android:label="fragment_hide_seek_question_view"
+        tools:layout="@layout/fragment_hide_seek_question_view" >
+        <!--問題一覧→自作問題1を作る-->
+        <action
+            android:id="@+id/action_hide_seek_question_view_to_hide_seek_question_input_1"
+            app:destination="@id/hide_seek_question_input_1" />
+        <!--問題一覧→自作問題2を作る-->
+        <action
+            android:id="@+id/action_hide_seek_question_view_to_hide_seek_question_input_2"
+            app:destination="@id/hide_seek_question_input_2" />
+        <!--問題一覧→自作問題3を作る-->
+        <action
+            android:id="@+id/action_hide_seek_question_view_to_hide_seek_question_input_3"
+            app:destination="@id/hide_seek_question_input_3" />
+    </fragment>
+
+<!--隠し場所を入力-->
+    <fragment
+        android:id="@+id/hide_seek_hide_place"
+        android:name="com.example.soba.hide_seek.hide_seek_hide_place"
+        android:label="fragment_hide_seek_hide_place"
+        tools:layout="@layout/fragment_hide_seek_hide_place" />
+<!--自作問題1を作る-->
+    <fragment
+        android:id="@+id/hide_seek_question_input_1"
+        android:name="com.example.soba.hide_seek.hide_seek_question_input_1"
+        android:label="fragment_hide_seek_question_input_1"
+        tools:layout="@layout/fragment_hide_seek_question_input_1" />
+<!--自作問題2を作る-->
+    <fragment
+        android:id="@+id/hide_seek_question_input_2"
+        android:name="com.example.soba.hide_seek.hide_seek_question_input_2"
+        android:label="fragment_hide_seek_question_input_2"
+        tools:layout="@layout/fragment_hide_seek_question_input_2" />
+<!--自作問題3を作る-->
+    <fragment
+        android:id="@+id/hide_seek_question_input_3"
+        android:name="com.example.soba.hide_seek.hide_seek_question_input_3"
+        android:label="fragment_hide_seek_question_input_3"
+        tools:layout="@layout/fragment_hide_seek_question_input_3" />
+<!--サンプルセット1-->
+    <fragment
+        android:id="@+id/hide_seek_question_sample_1"
+        android:name="com.example.soba.hide_seek.hide_seek_sample.hide_seek_question_sample_1"
+        android:label="fragment_hide_seek_question_sample_1"
+        tools:layout="@layout/fragment_hide_seek_question_sample_1" >
+        <!--サンプルセット1→サンプル問題1の遷移-->
+        <action
+            android:id="@+id/action_hide_seek_question_sample_1_to_hide_seek_question_sample_1_input_1"
+            app:destination="@id/hide_seek_question_sample_1_input_1" />
+        <!--サンプルセット1→サンプル問題2の遷移-->
+        <action
+            android:id="@+id/action_hide_seek_question_sample_1_to_hide_seek_question_sample_1_input_2"
+            app:destination="@id/hide_seek_question_sample_1_input_2" />
+        <!--サンプルセット1→サンプル問題3の遷移-->
+        <action
+            android:id="@+id/action_hide_seek_question_sample_1_to_hide_seek_question_sample_1_input_3"
+            app:destination="@id/hide_seek_question_sample_1_input_3" />
+    </fragment>
+<!--サンプル問題1-->
+    <fragment
+        android:id="@+id/hide_seek_question_sample_1_input_1"
+        android:name="com.example.soba.hide_seek.hide_seek_sample.hide_seek_question_sample_1_input_1"
+        android:label="fragment_hide_seek_question_sample_1_input_1"
+        tools:layout="@layout/fragment_hide_seek_question_sample_1_input_1" />
+<!--サンプル問題2-->
+    <fragment
+        android:id="@+id/hide_seek_question_sample_1_input_2"
+        android:name="com.example.soba.hide_seek.hide_seek_sample.hide_seek_question_sample_1_input_2"
+        android:label="fragment_hide_seek_question_sample_1_input_2"
+        tools:layout="@layout/fragment_hide_seek_question_sample_1_input_2" />
+<!--サンプル問題3-->
+    <fragment
+        android:id="@+id/hide_seek_question_sample_1_input_3"
+        android:name="com.example.soba.hide_seek.hide_seek_sample.hide_seek_question_sample_1_input_3"
+        android:label="fragment_hide_seek_question_sample_1_input_3"
+        tools:layout="@layout/fragment_hide_seek_question_sample_1_input_3" />
+<!--問題解答1-->
+    <fragment
+        android:id="@+id/hide_seek_seek_question1"
+        android:name="com.example.soba.hide_seek.hide_seek_seek_question1"
+        android:label="fragment_hide_seek_seek_question1"
+        tools:layout="@layout/fragment_hide_seek_seek_question1" >
+        <!--問題解答1→問題解答2の遷移-->
+        <action
+            android:id="@+id/action_hide_seek_seek_question1_to_hide_seek_seek_question2"
+            app:destination="@id/hide_seek_seek_question2" />
+    </fragment>
+<!--問題解答2-->
+    <fragment
+        android:id="@+id/hide_seek_seek_question2"
+        android:name="com.example.soba.hide_seek.hide_seek_seek_question2"
+        android:label="fragment_hide_seek_seek_question2"
+        tools:layout="@layout/fragment_hide_seek_seek_question2" >
+        <!--問題解答2→問題解答3の遷移-->
+        <action
+            android:id="@+id/action_hide_seek_seek_question2_to_hide_seek_seek_question3"
+            app:destination="@id/hide_seek_seek_question3" />
+    </fragment>
+<!--問題解答3-->
+    <fragment
+        android:id="@+id/hide_seek_seek_question3"
+        android:name="com.example.soba.hide_seek.hide_seek_seek_question3"
+        android:label="fragment_hide_seek_seek_question3"
+        tools:layout="@layout/fragment_hide_seek_seek_question3" >
+        <!--問題解答3→正解表示の遷移-->
+        <action
+            android:id="@+id/action_hide_seek_seek_question3_to_hide_seek_seek_result"
+            app:destination="@id/hide_seek_seek_result" />
+    </fragment>
+<!--正解表示-->
+    <fragment
+        android:id="@+id/hide_seek_seek_result"
+        android:name="com.example.soba.hide_seek.hide_seek_seek_result"
+        android:label="fragment_hide_seek_seek_result"
+        tools:layout="@layout/fragment_hide_seek_seek_result" />
 
 </navigation>
