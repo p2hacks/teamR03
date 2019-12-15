@@ -7,7 +7,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-    <ImageView android:id="@+id/backgroundMain"
+
+    <ImageView
+        android:id="@+id/backgroundMain"
         android:layout_width="803dp"
         android:layout_height="731dp"
         android:scaleType="centerCrop"
@@ -20,6 +22,7 @@
         app:srcCompat="@drawable/background"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto" />
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/homebar"
         android:layout_width="0dp"

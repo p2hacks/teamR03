@@ -8,7 +8,8 @@
         android:layout_height="match_parent"
         tools:context=".hide_seek.hide_seek">
 
-    <ImageView android:id="@+id/backgroundHideSeek"
+    <ImageView
+        android:id="@+id/backgroundHideSeek"
         android:layout_width="803dp"
         android:layout_height="731dp"
         android:scaleType="centerCrop"
