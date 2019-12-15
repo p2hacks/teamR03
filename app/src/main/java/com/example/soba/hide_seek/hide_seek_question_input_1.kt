@@ -50,7 +50,7 @@ class hide_seek_question_input_1 : Fragment() {
             }
 
             //ボタン押すとアニメーションの再生
-            animationView2.setAnimation(R.raw.save_checked)
+            animationView2.setAnimation(R.raw.checksave)
             animationView2.playAnimation()
         }
         view.backhome1_button.setOnClickListener {
@@ -58,5 +58,15 @@ class hide_seek_question_input_1 : Fragment() {
                 findNavController().popBackStack()
             }
         }
+        //入力内容をテキストボックスにも保持
+        val pref = activity?.getSharedPreferences("questionSet1", Context.MODE_PRIVATE)
+        val question1 = pref?.getString("question", null)
+        val choice1 = pref?.getString("choice1", null)
+        val choice2 = pref?.getString("choice2", null)
+        val choice3 = pref?.getString("choice3", null)
+        view.edit_question1.setText(question1)
+        view.input1_choice1.setText(choice1)
+        view.input1_choice2.setText(choice2)
+        view.input1_choice3.setText(choice3)
     }
 }
