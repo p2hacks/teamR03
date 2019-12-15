@@ -12,14 +12,14 @@
             android:id="@+id/startButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp" android:text="開始" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_marginBottom="16dp" android:background="#99FFFFFF" android:text="開始"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
         <TextView
             android:id="@+id/textView4"
             android:layout_width="322dp"
             android:layout_height="69dp"
             android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
-            android:background="#FFFFFF"
+            android:background="#CCFFFFFF"
             android:text="プレゼントに１から最後まで番号を振って下さい" android:textAlignment="center"
             android:textSize="24sp" android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,7 @@
             android:id="@+id/textView3"
             android:layout_width="325dp"
             android:layout_height="74dp" android:layout_marginTop="64dp"
-            android:background="#FFFFFF" android:text="準備ができたら、開始ボタンを押して交換会スタート！"
+            android:background="#CCFFFFFF" android:text="準備ができたら、開始ボタンを押して交換会スタート！"
             android:textAlignment="center" android:textSize="24sp"
             android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.493" app:layout_constraintStart_toStartOf="parent"
