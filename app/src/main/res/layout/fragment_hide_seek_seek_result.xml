@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout16"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hide_seek.hide_seek_seek_result" >
+
+    <TextView
+        android:id="@+id/result_place"
+        android:layout_width="288dp"
+        android:layout_height="200dp"
+        android:background="#CCFFFFFF"
+        android:text="プレゼントはここ"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <Button
+        android:id="@+id/back_to_home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CCFFFFFF"
+        android:text="おわり"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_place"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView10"
+        android:layout_width="212dp"
+        android:layout_height="207dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/happy_birthday" />
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/animationView20"-->
+<!--        android:layout_width="212dp"-->
+<!--        android:layout_height="207dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_rawRes="@raw/happy_birthday"-->
+<!--        app:lottie_colorFilter="FF3366"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

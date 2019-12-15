@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout15"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hide_seek.hide_seek_seek_question3">
+
+    <TextView
+        android:id="@+id/question3_view"
+        android:layout_width="266dp"
+        android:layout_height="148dp"
+        android:background="#CCFFFFFF"
+        android:text="問題文"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/question3_ans1"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="#CCFFFFFF"
+        android:text="解答1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question3_view" />
+
+    <Button
+        android:id="@+id/question3_ans2"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="#CCFFFFFF"
+        android:text="解答2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question3_ans1" />
+
+    <Button
+        android:id="@+id/question3_ans3"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="#CCFFFFFF"
+        android:text="解答3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question3_ans2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="155dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="70dp" />
+
+    <Button
+        android:id="@+id/goResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CCFFFFFF"
+        android:text="プレゼントはここだ！"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <ImageView
+        android:id="@+id/correctImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/correct"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <ImageView
+        android:id="@+id/wrongImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wrong"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/goToResultText"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="#CCFFFFFF"
+        android:text="ぜんもんせいかい！おめでとう！"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/goToHomeButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CCFFFFFF"
+        android:text="もういっかいやる"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
